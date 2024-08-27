@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>challeng-alura</title>
+    <link rel="stylesheet" href="./style/style.css">
+
+</head>
+<body>
+    <header class="header">
+        <a>
+            <img class="logo" src="./assests/logoalura.png">
+        </a>
+
+    </header>
+    <main class="inical">
+        
+
+        <div class="parte1">
+            <p>
+                <textarea class="ingresetexto" id="inputTexto" placeholder="Ingrese texto aquí" oninput="checkInput()" rows="10" cols="50" style="width: 700px;height: 271px;"></textarea>
+            </p>
+            <p class="anuncioadvertencia"><span class="Signo">!</span>  Solo letras minúsculas y sin acentos. </p>
+            <div class="botones12">
+                <button class="botones1" id="btnEncriptar" onclick="encriptarTexto()">Encriptar</button>
+                <button class="botones2" id="btnDesencriptar" onclick="desencriptarTexto()">Desencriptar</button> 
+                    
+
+            </div>
+                                                        
+        </div>
+
+        <div class="parte2">
+
+            <img class="imageninicial" src="./assests/niñobuscando.png">
+
+            <p class="textone">Ningún mensaje fue encontrado</p>
+            <p class="texttwo">Ingresa el texto que desees encriptar o desencriptar.</p>
+            <p class="mensaje_final" id= "mensajeResultado"></p>
+            <button class="botoncopiar" id="btnCopiar" onclick="copiarTexto()">Copiar</button>
+        </div>
+          
+       
+            
+    </main>
+    <footer class="footer">
+        <p>Desarrollado por Jhonier</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

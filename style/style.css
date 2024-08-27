@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --color-primario: #F3F5FC;
+    --color-secundario: #0A3871;
+    --color-terciario: #FFFFFF;
+    --color-cuarto: #B5B9C0;
+
+    --fuente-m: "Inter", sans serif;
+    --fuente-k: "Krona One", sans serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+    box-sizing: border-box;
+}
+
+strong{
+    color: var(--color-terciario);
+}   
+
+.inical {
+    align-items: center; /* Centra los elementos verticalmente dentro del contenedor */
+    display: flex;
+    justify-content: space-between; /* Opcional: Esto distribuirá los botones con espacio entre ellos */
+    gap: 10px; 
+}
+
+.parte2 {
+    position: absolute;
+    background-color: var(--color-terciario);
+    width: calc(400px +  (100vw - 1440px));  /* Ajustado a 400px */
+    height: calc(944px + (100vh - 1024px)); /* Ajustado a 944px */
+    border-radius: 32px;
+    right: 40px;
+    left: 1000px;
+    top: 40px;
+    bottom:40px;
+}
+
+.header{
+    width: calc(120px + (100vw - 1440px)); /*120px w*/
+    height: 48px; /*48px h*/
+    margin: 20px 40px;/*20 px h 40px w*/
+}
+
+.logo{
+    position: relative;
+    display: flex;
+    top: 40%;
+    left: 2.5%;
+    align-items: flex-end;
+}
+
+.ingresetexto{
+    text-align: normal;
+    margin-top: 120px;
+    margin-left: 240px;
+    width: calc(700px + (100vw - 1440px));
+    height: calc(210px + (100vh - 1024px));
+    font-family:var(--fuente-m);
+    font-size: 2rem;
+    font-weight: normal;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    color: var(--color-secundario);
+    outline: none;
+    resize: none;
+    overflow: hidden;
+}
+
+.ingresetexto::placeholder {
+    color: var(--color-secundario);
+}
+
+.anuncioadvertencia{
+    margin-left: 240px;
+    margin-top: 338px;
+    font-family:var(--fuente-m);
+    font-size: 0.5rem;
+    color: var(--color-cuarto);
+}
+
+.Signo{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: gray; 
+    border-radius: 50%; 
+    color: var(--color-primario);
+    text-align: center;
+    line-height: 20px;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.imageninicial{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    top: calc(283px + (100vh - 1024px));
+    left: 32px;
+}
+
+.botones12{
+    margin-left: 240px;
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; 
+}
+
+.botones1{
+    width: 328px;
+    height: 67px;
+    background-color: var(--color-secundario);
+    color: white;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    color: var(--color-primario);
+    text-align: center;
+    font-family:var(--fuente-m);
+    font-size: 1.125rem;
+    font-weight: normal;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.botones2{
+    width: 328px;
+    height: 67px;
+    margin-left: 24px;
+    background-color: var(--color-terciario);
+    color: var(--color-secundario);
+    border: 2px solid var(--color-secundario);
+    border-radius: 24px;
+    cursor: pointer;
+    text-align: center;
+    font-family:var(--fuente-m);
+    font-size: 1.125rem;
+    font-weight: normal;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.mensaje_final {
+    display: none; /* El mensaje final está oculto al inicio */
+    text-align: center;
+    font-size: 2rem;
+    width: calc(336px + (100vw - 1440px));
+    height: auto;
+    margin-top: 20px;
+    margin-left: 32px;
+    margin-right: 32px;
+    overflow-wrap: break-word;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.textone{
+    position: absolute;
+    color: var(--color-secundario);
+    text-align: center;
+    font-family:var(--fuente-m);
+    font-size: 1.5rem;
+    font-weight: bold;
+    top: 619px;
+    left: 64px;
+    right: 64px;
+}
+
+.texttwo{
+    position: absolute;
+    color: var(--color-secundario);
+    text-align: center;
+    font-family:var(--fuente-m);
+    font-size: 1rem;
+    font-weight: normal;
+    margin-top: 16px;
+    top: 673px;
+    left: 32px;
+    right: 32px;
+}
+
+.botoncopiar{
+    position: absolute;
+    top: 820px;
+    width: 336px;
+    height: 67px;
+    margin-left: 24px;
+    background-color: var(--color-terciario);
+    color: var(--color-secundario);
+    border: 2px solid var(--color-secundario);
+    border-radius: 24px;
+    cursor: pointer;
+    text-align: center;
+    font-family:var(--fuente-m);
+    font-size: 1.125rem;
+    font-weight: 400;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.botones1:hover, .botones2:hover, .botoncopiar:hover {
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos específicos para pantallas 768x1124 */
+@media screen and (min-width: 768px) and (max-width: 1124px) {
+    .parte2 {
+        width: 100%;
+        height: auto;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        border-radius: 0;
+    }
+    
+    .ingresetexto {
+        margin-top: 60px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+
+    .mensaje_final {
+        display: block;
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .botones12 {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+
+    .botones1, .botones2 {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+/* Estilos específicos para pantallas 375x930 */
+@media screen and (max-width: 375px) and (max-height: 930px) {
+    .parte2 {
+        width: 100%;
+        height: auto;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        border-radius: 0;
+    }
+    
+    .ingresetexto {
+        margin-top: 60px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+
+    .mensaje_final {
+        display: none;
+    }
+
+    .botones12 {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+
+    .botones1, .botones2 {
+        width: 100%;
+        margin: 0;
+    }
+    
+    .textone, .texttwo {
+        margin: 0 auto;
+        width: 90%;
+    }
+}
